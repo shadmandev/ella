@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import Logo from "../../asstes/img/logo.png";
-import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 const Header = () => {
     return (
