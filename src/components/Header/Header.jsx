@@ -1,7 +1,10 @@
 import React from "react";
 import "./Header.scss";
 import Logo from "../../asstes/img/logo.png";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Badge, Container, Nav, Navbar } from "react-bootstrap";
+import { GoSearch, GoHeart } from "react-icons/go";
+import { BsCart3 } from "react-icons/bs";
+// import { FaRegCircleUser } from "react-icons/fa6";
 
 const Header = () => {
     return (
@@ -41,15 +44,48 @@ const Header = () => {
                                         Contact Us
                                     </Nav.Link>
                                 </Nav>
-                                <Nav>
-                                    <Nav.Link href="#deets">
-                                        More deets
+                                <Nav className="nav-right-info">
+                                    <Nav.Link href="#deets">Sign In</Nav.Link>
+                                    <Nav.Link
+                                        href="#memes"
+                                        className="hover-border-none"
+                                    >
+                                        <GoSearch />
                                     </Nav.Link>
-                                    <Nav.Link eventKey={2} href="#memes">
-                                        Dank memes
+                                    <Nav.Link
+                                        href="#memes"
+                                        className="hover-border-none"
+                                    >
+                                        <GoHeart />
+                                    </Nav.Link>
+                                    <Nav.Link
+                                        href="#memes"
+                                        className="hover-border-none"
+                                    >
+                                        <BsCart3 />
+                                        <Badge pill bg="dark">
+                                            0
+                                        </Badge>
                                     </Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
+                            {/* <Nav className="d-lg-none">
+                                <Nav.Link
+                                    href="#memes"
+                                    className="hover-border-none"
+                                >
+                                    <FaRegCircleUser />
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#memes"
+                                    className="hover-border-none"
+                                >
+                                    <BsCart3 />
+                                    <Badge pill bg="dark">
+                                        0
+                                    </Badge>
+                                </Nav.Link>
+                            </Nav> */}
                         </Container>
                     </Navbar>
                 </div>

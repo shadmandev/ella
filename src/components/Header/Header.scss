@@ -61,6 +61,24 @@
                         transform-origin: left;
                     }
                 }
+                .nav-link.hover-border-none {
+                    &:hover::after {
+                        background: transparent;
+                        bottom: -2px;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                    }
+                }
+            }
+            .nav-right-info {
+                align-items: center;
+                gap: 15px;
+                .nav-link {
+                    svg {
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
             }
         }
     }
