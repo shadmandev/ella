@@ -1,0 +1,68 @@
+.header-wrap {
+    // Topbar CSS Start
+    .topbar-wrap {
+        background-color: #ffe8e8;
+        .topbar-content {
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: #b05d5d;
+                font-size: 11px;
+                font-weight: 500;
+                margin: 0;
+                text-transform: uppercase;
+                span {
+                    font-weight: 700;
+                }
+                a {
+                    color: #b05d5d;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    // Topbar CSS End
+
+    // Menu CSS Start
+    .main-menu-wrapper {
+        .navbar {
+            padding: 15px 0;
+            .navbar-brand {
+                img {
+                    width: 70px;
+                }
+            }
+            .navbar-nav {
+                gap: 40px;
+                .nav-link {
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #232323;
+                    padding: 0;
+                    transition: text-decoration 100ms ease;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        height: 1px;
+                        width: 100%;
+                        transform: scaleX(0);
+                        transition: transform 100ms ease-out;
+                        transform-origin: right;
+                    }
+                    &:hover::after {
+                        background: #232323;
+                        bottom: 1px;
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+            }
+        }
+    }
+    // Menu CSS End
+}
